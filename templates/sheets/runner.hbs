@@ -263,36 +263,36 @@
   <section class="augmentations">
     <h3>AUGMENTATIONS</h3>
     <div class="{{#if system.AUGMENTATIONS.first.GLICHED}}GLICHED{{/if}}">
-      <input id="{{actor._id}}_aug-1" type="checkbox" />
+      <input id="{{actor._id}}_aug-1" type="checkbox" name="system.AUGMENTATIONS.first.isOpen" {{#if system.AUGMENTATIONS.first.isOpen}}checked{{/if}}/>
       <div class="text">
         <label class="name" for="aug-1">
           <input type="text" name="system.AUGMENTATIONS.first.name" value="{{system.AUGMENTATIONS.first.name}}"/>
         </label>
-        <p>GLICHED</p>
+        <p>GLITCHED</p>
       </div>
       <div class="desc">
         {{editor system.AUGMENTATIONS.first.desc target="system.AUGMENTATIONS.first.desc" button=true owner=owner editable=editable}}
       </div>
     </div>
     <div class="{{#if system.AUGMENTATIONS.second.GLICHED}}GLICHED{{/if}}">
-      <input id="{{actor._id}}_aug-2" type="checkbox" />
+      <input id="{{actor._id}}_aug-2" type="checkbox" name="system.AUGMENTATIONS.second.isOpen" {{#if system.AUGMENTATIONS.second.isOpen}}checked{{/if}}/>
       <div class="text">
         <label class="name" for="aug-2">
           <input type="text" name="system.AUGMENTATIONS.second.name" value="{{system.AUGMENTATIONS.second.name}}"/>
         </label>
-        <p>GLICHED</p>
+        <p>GLITCHED</p>
       </div>
       <div class="desc">
         {{editor system.AUGMENTATIONS.second.desc target="system.AUGMENTATIONS.second.desc" button=true owner=owner editable=editable}}
       </div>
     </div>
     <div class="{{#if system.AUGMENTATIONS.third.GLICHED}}GLICHED{{/if}}">
-      <input id="{{actor._id}}_aug-3" type="checkbox" />
+      <input id="{{actor._id}}_aug-3" type="checkbox" name="system.AUGMENTATIONS.third.isOpen" {{#if system.AUGMENTATIONS.third.isOpen}}checked{{/if}}/>
       <div class="text">
         <label class="name" for="aug-3">
           <input type="text" name="system.AUGMENTATIONS.third.name" value="{{system.AUGMENTATIONS.third.name}}"/>
         </label>
-        <p>GLICHED</p>
+        <p>GLITCHED</p>
       </div>
       <div class="desc">
         {{editor system.AUGMENTATIONS.third.desc target="system.AUGMENTATIONS.third.desc" button=true owner=owner editable=editable}}
@@ -327,96 +327,128 @@
     </div>
     <div>
         <input id="{{actor._id}}_eq1" type="checkbox" name="system.GEAR.Equpment.eq1.isUse" {{#if system.GEAR.Equpment.eq1.isUse}}checked{{/if}}/>
-        <div><div class="box"></div></div>
-        <label for="{{actor._id}}_eq1">A BLADE OR TWO</label>
+        <label for="{{actor._id}}_eq1">
+          <div><div class="box"></div></div>
+          A BLADE OR TWO
+        </label>
     </div>
     <div>
         <input id="{{actor._id}}_eq2" type="checkbox" name="system.GEAR.Equpment.eq2.isUse" {{#if system.GEAR.Equpment.eq2.isUse}}checked{{/if}}/>
-        <div><div class="box"></div></div>
-        <label for="{{actor._id}}_eq2">SIDEARM</label>
+        <label for="{{actor._id}}_eq2">
+          <div><div class="box"></div></div>
+          SIDEARM
+        </label>
     </div>
     <div>
         <input id="{{actor._id}}_eq3" type="checkbox" name="system.GEAR.Equpment.eq3.isUse" {{#if system.GEAR.Equpment.eq3.isUse}}checked{{/if}}/>
-        <div><div class="box"></div></div>
-        <label for="{{actor._id}}_eq3">SUBMACHINE GUN</label>
+        <label for="{{actor._id}}_eq3">
+          <div><div class="box"></div></div>
+          SUBMACHINE GUN
+        </label>
     </div>
     <div>
         <input id="{{actor._id}}_eq4" type="checkbox" name="system.GEAR.Equpment.eq4.isUse" {{#if system.GEAR.Equpment.eq4.isUse}}checked{{/if}}/>
-        <div>
+        <label for="{{actor._id}}_eq4">
+          <div>
             <div class="box"></div>
             <div class="box"></div>
-        </div>
-        <label for="{{actor._id}}_eq4">LARGE/HEAVY WEAPON</label>
+          </div>
+          LARGE/HEAVY WEAPON
+        </label>
     </div>
     <div>
         <input id="{{actor._id}}_eq5" type="checkbox" name="system.GEAR.Equpment.eq5.isUse" {{#if system.GEAR.Equpment.eq5.isUse}}checked{{/if}}/>
-        <div><div class="box"></div></div>
-        <label for="{{actor._id}}_eq5">TRACKING DEVICE</label>
+        <label for="{{actor._id}}_eq5">
+          <div><div class="box"></div></div>
+          TRACKING DEVICE
+        </label>
     </div>
     <div>
         <input id="{{actor._id}}_eq6" type="checkbox" name="system.GEAR.Equpment.eq6.isUse" {{#if system.GEAR.Equpment.eq6.isUse}}checked{{/if}}/>
-        <div><div class="box"></div></div>
-        <label for="{{actor._id}}_eq6">CYBERDECK</label>
+        <label for="{{actor._id}}_eq6">
+          <div><div class="box"></div></div>
+          CYBERDECK
+        </label>
     </div>
     <div>
         <input id="{{actor._id}}_eq7" type="checkbox" name="system.GEAR.Equpment.eq7.isUse" {{#if system.GEAR.Equpment.eq7.isUse}}checked{{/if}}/>
-        <div><div class="box"></div></div>
-        <label for="{{actor._id}}_eq7">SMALL DRONE</label>
+        <label for="{{actor._id}}_eq7">
+          <div><div class="box"></div></div>
+          SMALL DRONE
+        </label>
         <p>STEALTHY OR SWIFT</p>
     </div>
     <div>
         <input id="{{actor._id}}_eq8" type="checkbox" name="system.GEAR.Equpment.eq8.isUse" {{#if system.GEAR.Equpment.eq8.isUse}}checked{{/if}}/>
-        <div>
+        <label for="{{actor._id}}_eq8">
+          <div>
             <div class="box"></div>
             <div class="box"></div>
-        </div>
-        <label for="{{actor._id}}_eq8">MEDIUM DRONE</label>
+          </div>
+          MEDIUM DRONE
+        </label>
         <p>TOUGH OR OFFENSIVE</p>
     </div>
     <div>
         <input id="{{actor._id}}_eq9" type="checkbox" name="system.GEAR.Equpment.eq9.isUse" {{#if system.GEAR.Equpment.eq9.isUse}}checked{{/if}}/>
-        <div><div class="box"></div></div>
-        <label for="{{actor._id}}_eq9">SPARE BATTERY</label>
+        <label for="{{actor._id}}_eq9">
+          <div><div class="box"></div></div>
+          SPARE BATTERY
+        </label>
     </div>
     <div>
         <input id="{{actor._id}}_eq10" type="checkbox" name="system.GEAR.Equpment.eq10.isUse" {{#if system.GEAR.Equpment.eq10.isUse}}checked{{/if}}/>
-        <div><div class="box"></div></div>
-        <label for="{{actor._id}}_eq10">MEDKIT</label>
+        <label for="{{actor._id}}_eq10">
+          <div><div class="box"></div></div>
+          MEDKIT
+        </label>
     </div>
     <div>
         <input id="{{actor._id}}_eq11" type="checkbox" name="system.GEAR.Equpment.eq11.isUse" {{#if system.GEAR.Equpment.eq11.isUse}}checked{{/if}}/>
-        <div><div class="box"></div></div>
-        <label for="{{actor._id}}_eq11">DISGUISE OR CAMO</label>
+        <label for="{{actor._id}}_eq11">
+          <div><div class="box"></div></div>
+          DISGUISE OR CAMO
+        </label>
     </div>
     <div>
         <input id="{{actor._id}}_eq12" type="checkbox" name="system.GEAR.Equpment.eq12.isUse" {{#if system.GEAR.Equpment.eq12.isUse}}checked{{/if}}/>
-        <div><div class="box"></div></div>
-        <label for="{{actor._id}}_eq12">ARMOR</label>
+        <label for="{{actor._id}}_eq12">
+          <div><div class="box"></div></div>
+          ARMOR
+        </label>
         <div>
             <input id="{{actor._id}}_eq12a" type="checkbox" name="system.GEAR.Equpment.eq12a.isUse" {{#if system.GEAR.Equpment.eq12a.isUse}}checked{{/if}}/>
-            <div>
+            <label for="{{actor._id}}_eq12a">
+              <div>
                 <div class="box"></div>
                 <div class="box"></div>
-            </div>
-            <label for="{{actor._id}}_eq12a">+HEAVY</label>
+              </div>
+              +HEAVY
+            </label>
         </div>
     </div>
     <div>
         <input id="{{actor._id}}_eq13" type="checkbox" name="system.GEAR.Equpment.eq13.isUse" {{#if system.GEAR.Equpment.eq13.isUse}}checked{{/if}}/>
-        <div><div class="box"></div></div>
-        <label for="{{actor._id}}_eq13">INFILTRATION GEAR</label>
+        <label for="{{actor._id}}_eq13">
+          <div><div class="box"></div></div>
+          INFILTRATION GEAR
+        </label>
     </div>
     <div>
         <input id="{{actor._id}}_eq14" type="checkbox" name="system.GEAR.Equpment.eq14.isUse" {{#if system.GEAR.Equpment.eq14.isUse}}checked{{/if}}/>
-        <div><div class="box"></div></div>
-        <label for="{{actor._id}}_eq14">EXTRA AMMO</label>
+        <label for="{{actor._id}}_eq14">
+          <div><div class="box"></div></div>
+          EXTRA AMMO
+        </label>
         <p>STANDARD / PIERCING / EXPLOSIVE / INCENDIARY</p>
     </div>
     <div>
-        <input id="{{actor._id}}_eq15" type="checkbox" name="system.GEAR.Equpment.eq15.isUse" {{#if system.GEAR.Equpment.eq15.isUse}}checked{{/if}}/>
-        <div><div class="box"></div></div>
         <div>
-            <label for="{{actor._id}}_eq15">SURVIVAL KIT</label>
+            <input id="{{actor._id}}_eq15" type="checkbox" name="system.GEAR.Equpment.eq15.isUse" {{#if system.GEAR.Equpment.eq15.isUse}}checked{{/if}}/>
+            <label for="{{actor._id}}_eq15">
+              <div><div class="box"></div></div>
+              SURVIVAL KIT
+            </label>
             <div class="stack" data-type="eq15" style="--max: {{system.GEAR.Equpment.eq15.max}};--stack: {{system.GEAR.Equpment.eq15.stack}}">
               {{#if system.GEAR.Equpment.eq15.stack}}{{system.GEAR.Equpment.eq15.stack}}{{else}}0{{/if}}
               /{{system.GEAR.Equpment.eq15.max}}
@@ -425,10 +457,12 @@
         <p>MASK, RATION, WATER / AIR PURIF</p>
     </div>
     <div>
-        <input id="{{actor._id}}_eq16" type="checkbox" name="system.GEAR.Equpment.eq16.isUse" {{#if system.GEAR.Equpment.eq16.isUse}}checked{{/if}}/>
-        <div><div class="box"></div></div>
         <div>
-            <label for="{{actor._id}}_eq16">GRENADES</label>
+            <input id="{{actor._id}}_eq16" type="checkbox" name="system.GEAR.Equpment.eq16.isUse" {{#if system.GEAR.Equpment.eq16.isUse}}checked{{/if}}/>
+            <label for="{{actor._id}}_eq16">
+              <div><div class="box"></div></div>
+              GRENADES
+            </label>
             <div class="stack" data-type="eq16" style="--max: {{system.GEAR.Equpment.eq16.max}};--stack: {{system.GEAR.Equpment.eq16.stack}}">
               {{#if system.GEAR.Equpment.eq16.stack}}{{system.GEAR.Equpment.eq16.stack}}{{else}}0{{/if}}
               /{{system.GEAR.Equpment.eq16.max}}
@@ -438,21 +472,27 @@
     </div>
     <div>
         <input id="{{actor._id}}_eq17" type="checkbox" name="system.GEAR.Equpment.eq17.isUse" {{#if system.GEAR.Equpment.eq17.isUse}}checked{{/if}}/>
-        <div>
+        <label for="{{actor._id}}_eq17">
+          <div>
             <div class="box"></div>
             <div class="box"></div>
-        </div>
-        <label for="{{actor._id}}_eq17">DEMOLITION TOOLS</label>
+          </div>
+          DEMOLITION TOOLS
+        </label>
     </div>
     <div>
         <input id="{{actor._id}}_eq18" type="checkbox" name="system.GEAR.Equpment.eq18.isUse" {{#if system.GEAR.Equpment.eq18.isUse}}checked{{/if}}/>
-        <div><div class="box"></div></div>
-        <label for="{{actor._id}}_eq18">MICROTRONICS TOOLS</label>
+        <label for="{{actor._id}}_eq18">
+          <div><div class="box"></div></div>
+          MICROTRONICS TOOLS
+        </label>
     </div>
     <div>
         <input id="{{actor._id}}_eq20" type="checkbox" name="system.GEAR.Equpment.eq20.isUse" {{#if system.GEAR.Equpment.eq20.isUse}}checked{{/if}}/>
-        <div><div class="box"></div></div>
-        <label for="{{actor._id}}_eq20">SPARE PARTS</label>
+        <label for="{{actor._id}}_eq20">
+          <div><div class="box"></div></div>
+          SPARE PARTS
+        </label>
     </div>
     <div>
         <div class="stack" data-type="eq21" style="--max: 4;--stack: {{system.GEAR.Equpment.eq21.stack}}">

@@ -402,12 +402,12 @@ export default class cbrRunner extends ActorSheet {
         else if (Math.max(...rollResult) == 6 ) {
             templateData.title = "THAT SHOULD WORK.";
             templateData.class = "good";
-            templateData.desc = "<strong>CLEAR ⚡⚡⚡</strong> -OR- <strong>IGONORE</strong> LEVEL 1 OR 2 HARM PENALTIES FOR THE REMAINDER OF THE RUN.";
+            templateData.desc = "<strong>CLEAR ⚡⚡⚡</strong> -OR- <strong>IGNORE</strong> LEVEL 1 OR 2 HARM PENALTIES FOR THE REMAINDER OF THE RUN.";
         }
         else if (rollResult.filter( dice => dice == 4 || dice == 5).length ) {
             templateData.title = "SUCK IT UP.";
             templateData.class = "consequence";
-            templateData.desc = "<strong>CLEAR ⚡⚡</strong> -OR- <strong>IGONORE</strong> LLEVEL 1 HARM PENALTIES FOR THE REMAINDER OF THE RUN.";
+            templateData.desc = "<strong>CLEAR ⚡⚡</strong> -OR- <strong>IGNORE</strong> LLEVEL 1 HARM PENALTIES FOR THE REMAINDER OF THE RUN.";
         }
         else {
             templateData.title = "TAKE WHAT YOU CAN GET.";

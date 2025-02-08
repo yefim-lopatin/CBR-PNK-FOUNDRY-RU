@@ -160,17 +160,20 @@
                 "first": {
                     "name": "",
                     "desc": "",
-                    "GLICHED": false
+                    "GLICHED": false,
+                    "isOpen": false
                 },
                 "second": {
                     "name": "",
                     "desc": "",
-                    "GLICHED": false
+                    "GLICHED": false,
+                    "isOpen": false
                 },
                 "third": {
                     "name": "",
                     "desc": "",
-                    "GLICHED": false
+                    "GLICHED": false,
+                    "isOpen": false
                 }
             },
             "GEAR": {

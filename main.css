@@ -434,7 +434,7 @@ section.gear .box {
   height: 15px;
   border: 1px solid;
 }
-section.gear input:checked ~ div:not(.stack) > .box {
+section.gear input:checked ~ label .box {
   background: rgb(var(--yellow));
   transition: all 0.2s linear;
   transform: rotate(45deg);
@@ -442,6 +442,8 @@ section.gear input:checked ~ div:not(.stack) > .box {
 section.gear label {
   padding-left: 5px;
   font-size: 14px;
+  display: flex;
+  gap: 5px;
 }
 section.gear p {
   display: flex;
@@ -544,7 +546,7 @@ section.gear p {
   top: 0;
   right: -10px;
   background: rgb(var(--yellow));
-  padding: 30px 10px;
+  padding: 28px 10px;
 }
 
 form.runnerCard {
@@ -1296,6 +1298,7 @@ input[name="addDice"]:checked + label:not(:nth-child(10)) {
 
 .gear .stack {
     color: rgb(var(--wierd));
+    margin-left: 5px;
 }
 
 .runner.overload {
@@ -1308,4 +1311,8 @@ tr[data-gliched="1"] .dots .box:nth-child(1) {
 
 tr[data-gliched="2"] .dots .box {
   filter: saturate(0.5) invert(0.9);
+}
+
+form.runnerCard header img {
+  min-height: 200px;
 }
