@@ -19,7 +19,4 @@ Unofficial system to play CBR+PNK on Foundry VTT
 - Taking the text to the language packages
 - Make Hacks card
 
-## To FIX:
-- Detection of throw by dice so nice
-
 [![COFFE](https://cdn.buymeacoffee.com/buttons/v2/default-blue.png)](https://www.buymeacoffee.com/kiszu)
