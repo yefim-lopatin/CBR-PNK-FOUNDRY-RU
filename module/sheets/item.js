@@ -1,5 +1,4 @@
-// import tags from "../../tags.js";
-export default class cbrItem extends ItemSheet {
+export default class cbrItem extends foundry.appv1.sheets.ItemSheet {
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
             width: 600,

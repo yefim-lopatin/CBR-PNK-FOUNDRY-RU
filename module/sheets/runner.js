@@ -1,4 +1,4 @@
-export default class cbrRunner extends ActorSheet {
+export default class cbrRunner extends foundry.appv1.sheets.ActorSheet {
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
           width: 440,
@@ -166,6 +166,16 @@ export default class cbrRunner extends ActorSheet {
                         this.actor.update({
                             [`system.GEAR.Equpment.${selectGear}.stack`] : Math.max(this.actor.system.GEAR.Equpment[selectGear].stack - 1, 0)
                         });
+                }
+                else if (!!event.target.getAttribute("data-id")){
+                    const selectGear = event.target.getAttribute("data-id");
+                    const isUse = this.actor.system.GEAR.Equpment[selectGear].isUse;
+                    const gearValue = this.actor.system.GEAR.Equpment[selectGear].value;
+                    this.actor.update({
+                        [`system.GEAR.Equpment.${selectGear}.isUse`] : !isUse,
+                        [`system.GEAR.LOAD.value`] : Math.max(0 , (!isUse ? this.actor.system.GEAR.LOAD.value + gearValue : this.actor.system.GEAR.LOAD.value - gearValue)
+                        )
+                    });
                 }
             break;
             case "harm":

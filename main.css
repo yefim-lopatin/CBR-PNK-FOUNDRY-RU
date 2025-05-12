@@ -468,7 +468,7 @@ section.gear p {
   width: 400px;
 }
 .stress::before {
-  content: "STRES: ";
+  content: "STRESS: ";
 }
 
 .stress p {
@@ -753,7 +753,7 @@ li.chat-message.message.flexcol .dice span.GLICHED {
 }
 
 h1 input[type="text"],
-* {
+*:not(::after):not(::before) {
   font-family: "Play", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -924,6 +924,7 @@ button.load {
 
 textarea#chat-message {
   background: rgb(var(--yellow));
+  color: #444;
 }
 
 .fa-regular,
@@ -1305,14 +1306,19 @@ input[name="addDice"]:checked + label:not(:nth-child(10)) {
     min-height: 330px;
 }
 
+tr[data-gliched="2"] .dots .box,
 tr[data-gliched="1"] .dots .box:nth-child(1) {
-  filter: saturate(0.5) invert(0.9);
-}
-
-tr[data-gliched="2"] .dots .box {
   filter: saturate(0.5) invert(0.9);
 }
 
 form.runnerCard header img {
   min-height: 200px;
+}
+
+.message-content :is(h1,h3){
+    color: white;
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.7em;
 }

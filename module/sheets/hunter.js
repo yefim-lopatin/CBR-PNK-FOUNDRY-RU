@@ -1,4 +1,4 @@
-export default class cbrHunter extends ActorSheet {
+export default class cbrHunter extends foundry.appv1.sheets.ActorSheet {
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
             width: 600,
