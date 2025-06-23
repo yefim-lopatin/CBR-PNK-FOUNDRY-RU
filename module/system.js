@@ -19,5 +19,15 @@ export class CbrSettings {
 			default: false,
 			requiresReload: true
 		});
+
+		game.settings.register("CBRPNK", "AugGlitchedCheck", {
+			name: `Glitched Augmentations work only if "active".`,
+			hint: "If this option is enabled Glitched Augmentations only considers Glitched status as Augmentations is checked.",
+			scope: "world",
+			config: true,
+			type: Boolean,
+			default: false,
+			requiresReload: true
+		});
 	}
 }

@@ -14,6 +14,7 @@ export default class cbrRunner extends foundry.appv1.sheets.ActorSheet {
         const context = super.getData();
         context.system = context.actor.system;
         context.system.wierd = game.settings.get("CBRPNK", "wiedModule");
+        context.system.AugGlitchedCheck = game.settings.get("CBRPNK", "AugGlitchedCheck");
 
         return context;
     }
@@ -158,17 +159,34 @@ export default class cbrRunner extends foundry.appv1.sheets.ActorSheet {
                 }
                 else if ( event.target.classList[0] === "stack" ) {
                     const selectGear = event.target.getAttribute('data-type');
-                    if ( btnClick == "l" ) 
+                    if ( selectGear === "eq21" && btnClick == "l" )
                         this.actor.update({
-                            [`system.GEAR.Equpment.${selectGear}.stack`] : Math.min(this.actor.system.GEAR.Equpment[selectGear].stack + 1, this.actor.system.GEAR.Equpment[selectGear].max)
+                            [`system.GEAR.Equpment.${selectGear}.stack`] : Math.min(
+                                this.actor.system.GEAR.Equpment[selectGear].stack + 1,
+                                this.actor.system.GEAR.Equpment[selectGear].max
+                            ),
+                            [`system.GEAR.LOAD.value`] : this.actor.system.GEAR.LOAD.value +
+                                (this.actor.system.GEAR.Equpment[selectGear].stack === this.actor.system.GEAR.Equpment[selectGear].max ? 0 : 1)
+                        });
+                    else if ( selectGear === "eq21" && btnClick == "r" )
+                        this.actor.update({
+                            [`system.GEAR.Equpment.${selectGear}.stack`] : Math.max(this.actor.system.GEAR.Equpment[selectGear].stack - 1, 0),
+                            [`system.GEAR.LOAD.value`] : Math.max(this.actor.system.GEAR.LOAD.value - 1, 0)
+                        });
+                    else if ( btnClick == "l" ) 
+                        this.actor.update({
+                            [`system.GEAR.Equpment.${selectGear}.stack`] : Math.min(
+                                this.actor.system.GEAR.Equpment[selectGear].stack + 1,
+                                this.actor.system.GEAR.Equpment[selectGear].max
+                            )
                         });
                     else if ( btnClick == "r" ) 
                         this.actor.update({
                             [`system.GEAR.Equpment.${selectGear}.stack`] : Math.max(this.actor.system.GEAR.Equpment[selectGear].stack - 1, 0)
                         });
                 }
-                else if (!!event.target.getAttribute("data-id")){
-                    const selectGear = event.target.getAttribute("data-id");
+                else if ( event.target.closest('label') ){
+                    const selectGear = event.target.closest('label').getAttribute("data-id");
                     const isUse = this.actor.system.GEAR.Equpment[selectGear].isUse;
                     const gearValue = this.actor.system.GEAR.Equpment[selectGear].value;
                     this.actor.update({
@@ -199,7 +217,9 @@ export default class cbrRunner extends foundry.appv1.sheets.ActorSheet {
         const dataRoll = {
             ...this.actor.system.roll,
             GLICHED: 
-                Object.values(this.actor.system.AUGMENTATIONS).filter( ({GLICHED}) => GLICHED ).length + 
+                Object.values(this.actor.system.AUGMENTATIONS).filter( 
+                    ({GLICHED,isOpen}) => GLICHED && ( !this.actor.system.AugGlitchedCheck || isOpen )
+                ).length + 
                 this.actor.system.approach[this.actor.system.roll.approach].GLICHED + 
                 this.actor.system.skills[this.actor.system.roll.skill].gliched,
             dices: `${this.actor.system.approach[this.actor.system.roll.approach].dice} + ${(this.actor.system.skills[this.actor.system.roll.skill]||{dice: 0}).dice}`

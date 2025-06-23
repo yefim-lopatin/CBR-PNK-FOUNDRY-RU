@@ -254,12 +254,12 @@
                     "eq12": {
                         "name": "ARMOR",
                         "isUse": false,
-                        "value": 1,
-                        "eq12a": {
-                            "name": "+HEAVY",
-                            "isUse": false,
-                            "value": 2
-                        }
+                        "value": 1
+                    },
+                    "eq12a": {
+                        "name": "+HEAVY",
+                        "isUse": false,
+                        "value": 2
                     },
                     "eq13": {
                         "name": "INFILTRATION GEAR",

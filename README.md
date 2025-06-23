@@ -19,4 +19,8 @@ Unofficial system to play CBR+PNK on Foundry VTT
 - Taking the text to the language packages
 - Make Hacks card
 
+## License
+following: [https://emanoelmelo.itch.io/cbrpnk-toolkit](https://emanoelmelo.itch.io/cbrpnk-toolkit)
+> Published independently under the 'CBR+PNK Compatibility License' with no association with Emanoel Melo, The Cabinet of Curiosities, Mythworks, or other official publishers of CBR+PNK.
+
 [![COFFE](https://cdn.buymeacoffee.com/buttons/v2/default-blue.png)](https://www.buymeacoffee.com/kiszu)
