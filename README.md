@@ -3,9 +3,6 @@
 Unofficial system to play CBR+PNK on Foundry VTT
 - Link to install: [https://raw.githubusercontent.com/P4NTY/CBR-PNK-FOUNDRY/main/system.json](https://github.com/P4NTY/CBR-PNK-FOUNDRY/releases/download/latest/system.json)
 - Link to TRPG system: https://emanoelmelo.itch.io/cbrpnk-core
- 
-## WHY?
-- The Custom Builder-based version is ugly and not very intulictive
 
 ## HOW IT LOOKS:
 ![image](https://github.com/P4NTY/CBR-PNK-FOUNDRY/blob/main/assets/image.png?raw=true)
