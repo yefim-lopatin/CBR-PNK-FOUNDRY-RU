@@ -8,12 +8,12 @@
                 "isOpen": false,
                 "hunted": false,
                 "for": "",
-                "DETAILS": "",
-                "DEBT": {
+                "ДЕТАЛИ": "",
+                "ДОЛГ": {
                     "value": 0,
                     "max": 3
                 },
-                "CRED": {
+                "КРЕД": {
                     "value": 0,
                     "max": 3
                 },
@@ -32,131 +32,131 @@
                 "isLOAD": false
             },
             "approach": {
-                "AGGRESSIVE": {
+                "АГРЕССИВНО": {
                     "dice": 0,
                     "GLICHED": false
                 },
-                "SMART": {
+                "УМНО": {
                     "dice": 0,
                     "GLICHED": false
                 },
-                "EMPATHIC": {
+                "ЭМПАТИЧНО": {
                     "dice": 0,
                     "GLICHED": false
                 },
-                "STEALTHY": {
+                "СКРЫТНО": {
                     "dice": 0,
                     "GLICHED": false
                 }
             },
             "skills": {
-                "ANALYZE": {
+                "АНАЛИЗ": {
                     "dice": 0,
                     "gliched": 0,
                     "EXPERTISES": {
-                        "PEOPLE": false,
-                        "SITUATION": false,
-                        "INFORMATION": false
+                        "ЛЮДИ": false,
+                        "СИТУАЦИЯ": false,
+                        "ИНФОРМАЦИЯ": false
                     }
                 },
-                "ATHLETICS": {
+                "АТЛЕТИКА": {
                     "dice": 0,
                     "gliched": 0,
                     "EXPERTISES": {
-                        "SPRINT": false,
-                        "PARKOUR": false,
-                        "SWIM": false,
-                        "CLIMB": false
+                        "БЕГ": false,
+                        "ПАРКУР": false,
+                        "ПЛАВАНИЕ": false,
+                        "ЛАЗАНИЕ": false
                     }
                 },
-                "CLOSE": {
+                "БЛИЖНЙ БОЙ": {
                     "dice": 0,
                     "gliched": 0,
                     "EXPERTISES": {
-                        "BRAWLING": false,
-                        "KNIFE": false,
-                        "SWORD": false,
-                        "BAT": false,
-                        "WIRE": false
+                        "БОРЦУХА": false,
+                        "НОЖ": false,
+                        "МЕЧ": false,
+                        "БИТА": false,
+                        "МОНОСТРУНА": false
                     }
                 },
-                "CODING": {
+                "КОДИНГ": {
                     "dice": 0,
                     "gliched": 0,
                     "EXPERTISES": {
-                        "HACK": false,
-                        "COMPILE": false,
-                        "MINE": false,
-                        "SCRAMBLE": false
+                        "ХАКИНГ": false,
+                        "КОМПИЛЯЦИЯ": false,
+                        "МАЙНИНГ": false,
+                        "ШИФРОВАНИЕ": false
                     }
                 },
-                "INFLUENCE": {
+                "МАНИПУЛЯЦИЯ": {
                     "dice": 0,
                     "gliched": 0,
                     "EXPERTISES": {
-                        "PERFORM": false,
-                        "NEGOTIATE": false,
-                        "INTIMIDATE": false
+                        "ВЫСТУПЛЕНИЕ": false,
+                        "ПЕРЕГОВОРЫ": false,
+                        "ЗАПУГИВАНИЕ": false
                     }
                 },
-                "PILOTING": {
+                "УПРАВЛЕНИЕ": {
                     "dice": 0,
                     "gliched": 0,
                     "EXPERTISES": {
-                        "CARS": false,
-                        "BIKES": false,
-                        "CHOPPERS": false,
-                        "DRONES": false
+                        "ТАЧКИ": false,
+                        "БАЙКИ": false,
+                        "ЧОППЕРЫ": false,
+                        "ДРОНЫ": false
                     }
                 },
-                "RANGED": {
+                "ДАЛЬНИЙ БОЙ": {
                     "dice": 0,
                     "gliched": 0,
                     "EXPERTISES": {
-                        "PISTOL": false,
-                        "RIFLE": false,
-                        "SMG": false,
-                        "THROWING": false
+                        "ПИСТОЛЕТ": false,
+                        "ВИНТОВКА": false,
+                        "П-ПУЛЕМЕТ": false,
+                        "МЕТАТЕЛЬНОЕ": false
                     }
                 },
-                "RIGGING": {
+                "ПОЧИНКА": {
                     "dice": 0,
                     "gliched": 0,
                     "EXPERTISES": {
-                        "ELETRONICS": false,
-                        "ROBOTICS": false,
-                        "HEAVY": false
+                        "ЭЛЕКТРОНИКА": false,
+                        "РОБОТЫ": false,
+                        "МЕХАНИЗМЫ": false
                     }
                 },
-                "SCIENCES": {
+                "НАУКА": {
                     "dice": 0,
                     "gliched": 0,
                     "EXPERTISES": {
-                        "BIOTECH": false,
-                        "PHYSICS": false,
-                        "CHEMISTRY": false
+                        "БОТЕХ": false,
+                        "ФИЗИКА": false,
+                        "ХИМИЯ": false
                     }
                 },
-                "STREETWISE": {
+                "ЗНАНИЕ УЛИЦ": {
                     "dice": 0,
                     "gliched": 0,
                     "EXPERTISES": {
-                        "POLITICS": false,
-                        "MARKET": false,
-                        "NAVIGATION": false
+                        "ПОЛИТИКА": false,
+                        "РЫНОК": false,
+                        "НАВИГАЦИЯ": false
                     }
                 },
-                "ATTUNE": {
+                "РЕЗОНАНС": {
                     "dice": 0,
                     "gliched": 0,
                     "EXPERTISES": {
-                        "SPIRITS": false,
-                        "ARTIFACTS": false,
-                        "PLACES": false
+                        "ДУХИ": false,
+                        "АРТЕФАКТЫ": false,
+                        "МЕСТА": false
                     }
                 }
             },
-            "AUGMENTATIONS": {
+            "АУГМЕНТАЦИИ": {
                 "first": {
                     "name": "",
                     "desc": "",
@@ -176,135 +176,135 @@
                     "isOpen": false
                 }
             },
-            "GEAR": {
-                "LOAD": {
+            "СНАРЯГА": {
+                "light": {
                     "value": 0,
-                    "selected": "light",
+                    "selected": "ЛЁГКАЯ",
                     "light": {
                         "value": 3,
-                        "desc": "Move freely, blend in easily."
+                        "desc": "Двигайтесь свободно, легко сливайтесь с толпой."
                     },
                     "medium": {
                         "value": 5,
-                        "desc": "Look ready for a job."
+                        "desc": "Выглядите готовым к делу."
                     },
                     "heavy": {
                         "value": 7,
-                        "desc": "Loud or slow, very conspicuous."
+                        "desc": "Громко или медленно, очень заметно."
                     }
                 },
                 "Equpment": {
                     "eq1": {
-                        "name": "A BLADE OR TWO",
+                        "name": "Клинок или два",
                         "isUse": false,
                         "value": 1
                     },
                     "eq2": {
-                        "name": "SIDEARM",
+                        "name": "Лёгкое оружие",
                         "isUse": false,
                         "value": 1
                     },
                     "eq3": {
-                        "name": "SUBMACHINE GUN",
+                        "name": "Пистолет-пулемет",
                         "isUse": false,
                         "value": 1
                     },
                     "eq4": {
-                        "name": "LARGE/HEAVY WEAPON",
+                        "name": "Большое/тяжелое оружие",
                         "isUse": false,
                         "value": 2
                     },
                     "eq5": {
-                        "name": "TRACKING DEVICE",
+                        "name": "Отслеживющее устройство",
                         "isUse": false,
                         "value": 1
                     },
                     "eq6": {
-                        "name": "CYBERDECK",
+                        "name": "Кибердека",
                         "isUse": false,
                         "value": 1
                     },
                     "eq7": {
-                        "name": "SMALL DRONE",
+                        "name": "Маленький дрон",
                         "isUse": false,
                         "value": 1,
-                        "desc": "STEALTHY OR SWIFT"
+                        "desc": "скрытый или быстрый"
                     },
                     "eq8": {
-                        "name": "MEDIUM DRONE",
+                        "name": "Средний дрон",
                         "isUse": false,
                         "value": 2,
-                        "desc": "TOUGH OR OFFENSIVE"
+                        "desc": "устойчивый или вооруженный"
                     },
                     "eq9": {
-                        "name": "SPARE BATTERY",
+                        "name": "Запасной аккумулятор",
                         "isUse": false,
                         "value": 1
                     },
                     "eq10": {
-                        "name": "MEDKIT",
+                        "name": "Аптечка",
                         "isUse": false,
                         "value": 1
                     },
                     "eq11": {
-                        "name": "DISGUISE OR CAMO",
+                        "name": "Маскировка или камуфляж",
                         "isUse": false,
                         "value": 1
                     },
                     "eq12": {
-                        "name": "ARMOR",
+                        "name": "Броня",
                         "isUse": false,
                         "value": 1
                     },
                     "eq12a": {
-                        "name": "+HEAVY",
+                        "name": "+Тяжелая",
                         "isUse": false,
                         "value": 2
                     },
                     "eq13": {
-                        "name": "INFILTRATION GEAR",
+                        "name": "Устройство для проникновения",
                         "isUse": false,
                         "value": 1
                     },
                     "eq14": {
-                        "name": "EXTRA AMMO",
+                        "name": "Дополнительные патроны",
                         "isUse": false,
                         "value": 1,
-                        "desc": "STANDARD / PIERCING / EXPLOSIVE / INCENDIARY"
+                        "desc": "стандартные / бронебойные / разрывные / зажигательные"
                     },
                     "eq15": {
-                        "name": "SURVIVAL KIT",
+                        "name": "Набор для выживания",
                         "isUse": false,
                         "value": 1,
-                        "desc": "MASK, RATION, WATER / AIR PURIF",
+                        "desc": "маска, рацион, водо/воздухо очиститель",
                         "stack": 0,
                         "max": 3
                     },
                     "eq16": {
-                        "name": "GRENADES",
+                        "name": "Гранаты",
                         "isUse": false,
                         "value": 1,
-                        "desc": "EMP / GAS / STUN / INCEND / FRAG",
+                        "desc": "эми / газовов. / оглуш. / зажигат. / разрыв.",
                         "stack": 0,
                         "max": 2
                     },
                     "eq17": {
-                        "name": "DEMOLITION TOOLS",
+                        "name": "Инструменты для сноса",
                         "isUse": false,
                         "value": 2
                     },
                     "eq18": {
-                        "name": "MICROTRONICS TOOLS",
+                        "name": "Инструменты микротронной электроники",
                         "isUse": false,
                         "value": 1
                     },
                     "eq20": {
-                        "name": "SPARE PARTS",
+                        "name": "Запчасти",
                         "isUse": false,
                         "value": 1
                     },
                     "eq21": {
-                        "name": "EXTRA LOAD",
+                        "name": "Дополнительная нагрузка",
                         "isUse": false,
                         "stack": 0,
                         "max": 4
@@ -328,7 +328,7 @@
                     "max": 1
                 },
                 "die": {
-                    "name": "TIME TO DIE.",
+                    "name": "ПОРА ПОМИРАТЬ.",
                     "value": 0,
                     "max": 1
                 }
