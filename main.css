@@ -253,7 +253,7 @@ form.card section {
   margin: 0;
 }
 .approach::before {
-  content: "APPROACH";
+  content: "ПОДХОД";
   text-orientation: upright;
   writing-mode: vertical-lr;
   position: absolute;
@@ -284,7 +284,7 @@ form.card section {
   position: relative;
 }
 .approach .dots::after {
-  content: "GLICHED";
+  content: "ГЛЮК";
   position: absolute;
   font-size: x-small;
   bottom: -6px;
@@ -327,7 +327,7 @@ section.skills p strong {
   color: rgb(var(--dark));
 }
 section.skills::before {
-  content: "SKILLS";
+  content: "НАВЫКИ";
   text-orientation: upright;
   writing-mode: vertical-lr;
   position: absolute;
@@ -539,7 +539,7 @@ section.gear p {
 .harm li[data-type="die"]::after { content: "💀"; }
 
 .harm::before {
-  content: "HARM";
+  content: "ПОВРЕЖДЕНИЯ";
   text-orientation: upright;
   writing-mode: vertical-lr;
   position: absolute;
@@ -624,7 +624,7 @@ section.roll {
   display: grid;
 }
 .efect::before {
-  content: "EFFECT: ";
+  content: "ЭФФЕКТИВНОСТЬ: ";
   width: 55px;
 }
 .efect label {
@@ -639,7 +639,7 @@ section.roll {
 }
 
 .threat::before {
-  content: "THREAT: ";
+  content: "УГРОЗА: ";
   width: 55px;
 }
 .threat label {
@@ -657,7 +657,7 @@ section.roll {
 }
 
 .addDice::after {
-  content: "➕ DICE";
+  content: "➕ D6";
 }
 
 .approach .select h3 {
