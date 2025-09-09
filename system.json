@@ -4,12 +4,12 @@
   "description": "Unofficial system to CBR+PNK",
   "authors": [
     {
-      "name": "Kiszu",
-      "discord": "2137",
-      "url": "https://github.com/P4NTY/"
+      "name": "yef",
+      "discord": "0000",
+      "url": "https://github.com/yefim-lopatin/"
     }
   ],
-  "version": "0.97",
+  "version": "0.1",
   "compatibility": {
     "minimum": 11,
     "verified": 13,
@@ -17,8 +17,8 @@
   },
   "esmodules": [ "main.js" ],
   "styles": ["main.css" ],
-  "url": "https://github.com/P4NTY/CBR-PNK-FOUNDRY",
+  "url": "https://github.com/yefim-lopatin/CBR-PNK-FOUNDRY-RU",
   "background": "systems/CBRPNK/assets/CBRPNK_splash.webp",
-  "manifest": "https://github.com/P4NTY/CBR-PNK-FOUNDRY/releases/latest/download/system.json",
-  "download": "https://github.com/P4NTY/CBR-PNK-FOUNDRY/releases/download/0.97/CBRPNK.zip"
+  "manifest": "https://github.com/yefim-lopatin/CBR-PNK-FOUNDRY-RU/releases/latest/download/system.json",
+  "download": "https://github.com/yefim-lopatin/CBR-PNK-FOUNDRY-RU/releases/download/v0.1.0/system.zip"
 }
